@@ -1,21 +1,21 @@
-import Emi from "./component/Emi";
+import Installment from "./component/Installment";
 import "./App.css";
-import Application from "./component/Application";
-import Display from "./component/Display";
-import Previous from "./component/Previous";
+import Light from "./component/Light";
+import Screen from "./component/Screen";
+import Back from "./component/Back";
 
 function App() {
   return (
-    <div className="book">
-      <h1 className="Word">EQUATED MONTHLY INSTALLMENT CALCULATOR</h1>
-      <div className="move">
-        <Application />
-        <div className="down">
-          <Emi />
+    <div className="mobile">
+      <h1 className="head">INSTALLMENT CALCULATOR</h1>
+      <div className="handle">
+        <Light />
+        <div className="divide">
+          <Installment />
         </div>
-        <Display />
+        <Screen />
       </div>
-      <Previous />
+      <Back />
     </div>
   );
 }

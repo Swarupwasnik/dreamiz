@@ -3,14 +3,14 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
-import "./emi.css"
+import "./Installment"
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   color: theme.palette.text.secondary,
 }));
-function Emi() {
+function Installment() {
   const data = useSelector((res) => res);
   return (
     <Box className="boxA" sx={{ width: "90%" }}>
@@ -19,15 +19,15 @@ function Emi() {
           Monthly Installment : {data.monthlyEMI ? ` ${data.monthlyEMI}` : ""}
         </Item>
         <Item>
-          Total Simple Interest  to be Paid :
+          Interest Paid Amt :
           {data.intestamount ? ` ${data.intestamount}` : ""}
         </Item>
         <Item>
-          Total Amount Payable :{data.totalpayble ? ` ${data.totalpayble}` : ""}{" "}
+          Gross Amt Pay :{data.totalpayble ? ` ${data.totalpayble}` : ""}{" "}
         </Item>
       </Stack>
     </Box>
   );
 }
 
-export default Emi;
+export default Installment;

@@ -1,13 +1,13 @@
-.book{
+.mobile{
   text-align: center;
   width: 100%;
 }
 
-.move{
+.handle{
  
   display: flex;
   flex-direction: row;
-  background-color: honeydew;
+  background-color:lightskyblue;
   align-items: center;
   justify-content: space-between;
   width: 90%;
@@ -15,26 +15,26 @@
   margin: 10px auto;
   box-shadow:azure 0px 1px 2px 0px, rgba(39, 57, 71, 0.15) 0px 1px 3px 1px;
 }
-.down{
+.divide{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  color: black;
-  background-color: antiquewhite;
+  color: red;
+  background-color:lightcoral;
 
 }
 .alldata{
   display: grid;
   grid-template-columns:repeat(3,1fr);
   width: 100%;
-   background-color:aqua;
+   background-color:lightsalmon;
   margin: auto;
-  color: black;
+  color: red;
 }
-.word{
-  color :black;
+.head{
+  color :green;
   text-decoration: underline;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import React from "react";
 import Block from "./Block";
 
-function Previous() {
+function Back() {
   const [show, setShow] = useState(false);
   const [initdata, setInitdata] = useState([]);
   let { history } = useSelector((res) => res);
@@ -14,7 +14,7 @@ function Previous() {
   }, []);
   return !show ? (
     <Button variant="contained" color="success" onClick={() => setShow(true)}>
-      PREVIOUS HISTORY
+       Previous Data
     </Button>
   ) : (
     <div>
@@ -34,4 +34,4 @@ function Previous() {
   );
 }
 
-export default Previous;
+export default Back;

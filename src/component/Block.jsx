@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import React from "react";
-import Data from "./Data";
+import Info from "./Info";
 const style = {
   width: 320,
   border: "2px solid #111",
@@ -34,12 +34,12 @@ function Block({ history }) {
   let { title, table } = history;
   return (
     <Box sx={style}>
-      <Typography id="spring-modal-title">PRINCIPAL AMOUNT : {title.amount}</Typography>
+      <Typography id="spring-modal-title">Amount : {title.amount}</Typography>
       <Typography id="spring-modal-description" sx={{ mt: 1 }}>
-        ROI : {title.rate} %
+        Rate : {title.rate} %
       </Typography>
       <Typography id="spring-modal-description" sx={{ mt: 1 }}>
-        DURATION : {title.tenure} Months
+        Tenure : {title.tenure} Months
       </Typography>
       <Button variant="contained" sx={{ mt: 1 }} onClick={handleOpen}>
         EMI Table
@@ -56,7 +56,7 @@ function Block({ history }) {
         }}
       >
         <Box sx={stylez}>
-          <Data tableData={table} />
+          <Info tableData={table} />
         </Box>
       </Modal>
     </Box>

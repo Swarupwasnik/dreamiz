@@ -9,7 +9,7 @@ import {
   MenuItem,
   Button,
 } from "@mui/material";
-function Application() {
+function Light() {
   const [userdata, setUserdata] = useState({
     amount: "",
     rate: "",
@@ -61,6 +61,9 @@ function Application() {
           <MenuItem value="18">18 Months</MenuItem>
           <MenuItem value="24">24 Months</MenuItem>
           <MenuItem value="24">30 Months</MenuItem>
+          <MenuItem value="24">36 Months</MenuItem>
+          <MenuItem value="24">42 Months</MenuItem>
+          <MenuItem value="24">48 Months</MenuItem>
          
         </Select>
       </FormControl>
@@ -86,4 +89,4 @@ function Application() {
   );
 }
 
-export default Application;
+export default Light;

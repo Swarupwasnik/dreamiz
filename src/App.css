@@ -1,0 +1,40 @@
+.book{
+  text-align: center;
+  width: 100%;
+}
+
+.move{
+ 
+  display: flex;
+  flex-direction: row;
+  background-color: honeydew;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+  box-shadow:azure 0px 1px 2px 0px, rgba(39, 57, 71, 0.15) 0px 1px 3px 1px;
+}
+.down{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  color: black;
+  background-color: antiquewhite;
+
+}
+.alldata{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  width: 100%;
+   background-color:aqua;
+  margin: auto;
+  color: black;
+}
+.word{
+  color :black;
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
